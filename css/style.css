@@ -7,3 +7,66 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+/* test elementi principali */
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  /* test */
+}
+
+.top-container {
+  display: flex;
+    /* test */
+}
+
+#navbar {
+  width: 250px;
+  height: calc(100vh - 100px);
+  background-color: blueviolet;
+  /* test */
+}
+
+main {
+  height: calc(100vh - 100px);
+  width: calc(100% - 250px);
+
+  overflow: auto;
+
+  background-color: #141922;
+  /* test */
+}
+
+.control-bar {
+  height: 100px;
+  background-color: aqua;
+/* test */
+}
+
+/* /test */
+
+/* premium section */
+
+.premium-upgrade {
+  height: 100px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+
+  background-color: #080b12;
+}
+
+.upgrade-btn {
+  margin-right: 30px;
+  padding: 15px 40px;
+  font-weight: 700;
+  border: 2px solid #FFFFFF;
+  border-radius: 24px;
+  background-color: transparent;
+  color: white;
+}
+
+/* /premium section */
