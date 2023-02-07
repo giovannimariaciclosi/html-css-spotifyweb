@@ -24,7 +24,7 @@ body {
 #navbar {
   width: 250px;
   height: calc(100vh - 100px);
-  background-color: blueviolet;
+  background-color: black;
   /* test */
 }
 
@@ -40,7 +40,7 @@ main {
 
 .control-bar {
   height: 100px;
-  background-color: aqua;
+  background-color: #282828;
 /* test */
 }
 
@@ -70,3 +70,88 @@ main {
 }
 
 /* /premium section */
+
+/* main */
+
+/* main navbar */
+
+.main-navbar ul {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+
+  color: #797c80;
+  list-style-type: none;
+  font-weight: 700;
+}
+
+.main-navbar .selected-li {
+  border-bottom: 2px solid #adff2f;
+}
+/* /main navbar */
+
+.recently-played,
+.created-for-you,
+.popular-artists {
+  padding: 0 40px;
+}
+
+.section-title {
+  margin-bottom: 35px;
+
+  font-size: 2.2em;
+  color: white;
+}
+
+.section-container {
+  display: flex;
+  gap: 15px;
+}
+
+.section-element {
+  width: calc(100% / 6);
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.element-image {
+  width: 100%;
+}
+
+.element-title {
+  padding-top: 10px;
+  text-align: center;
+  color: white;
+}
+
+.element-subtitle {
+  color: #797c80;
+  font-weight: 700;
+  text-align: center;
+}
+
+.created-for-you .section-title,
+.popular-artists .section-title {
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  color: #797c80;
+  font-weight: 700;
+}
+
+.created-for-you .section-container,
+.popular-artists .section-container {
+  margin-top: 20px;
+}
+
+.section-element .round{
+  border-radius: 50%;
+}
