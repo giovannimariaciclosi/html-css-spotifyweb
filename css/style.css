@@ -8,24 +8,20 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* test elementi principali */
-
+/* layout */
 .container {
   height: 100vh;
   margin: 0 auto;
-  /* test */
 }
 
 .top-container {
   display: flex;
-    /* test */
 }
 
 #navbar {
   width: 250px;
   height: calc(100vh - 100px);
   background-color: black;
-  /* test */
 }
 
 main {
@@ -35,19 +31,16 @@ main {
   overflow: auto;
 
   background-color: #141922;
-  /* test */
 }
 
 .control-bar {
   height: 100px;
   background-color: #282828;
-/* test */
 }
+/* /layout */
 
-/* /test */
 
 /* premium section */
-
 .premium-upgrade {
   height: 100px;
 
@@ -68,15 +61,13 @@ main {
   background-color: transparent;
   color: white;
 }
-
 /* /premium section */
 
 /* main */
-
 /* main navbar */
 
 .main-navbar ul {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 40px;
   position: relative;
 
@@ -87,9 +78,10 @@ main {
   color: #797c80;
   list-style-type: none;
   font-weight: 700;
+  font-size: 1.2em;
 }
 
-.main-navbar .selected-li {
+.main-navbar ul li:first-of-type {
   border-bottom: 2px solid #adff2f;
 }
 /* /main navbar */
@@ -155,3 +147,138 @@ main {
 .section-element .round{
   border-radius: 50%;
 }
+
+/* /main */
+
+/* navbar */
+.navbar-container {
+  /* test */
+  /* padding: 20px 70px 20px 20px; */
+  /* /test */
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.logo {
+  padding: 20px 70px 20px 20px;
+  /* test */
+}
+
+.nav-menu-container {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* border-left: 3px solid #adff2f; */
+}
+
+.nav-menu-container.selected {
+  border-left: 3px solid #adff2f;
+}
+
+.nav-menu-icon {
+  max-height: 28px;
+  /* test */
+}
+
+.nav-menu-text {
+  /* font-size: 1.2em; */
+  color: #717171;
+}
+
+.playlist-section {
+  padding-left: 20px;
+}
+
+.playlist-section strong:first-child {
+  color: white;
+  /* font-size: 1.3em; */
+}
+
+.playlist-section .nav-menu-container {
+  margin-top: 15px;
+  padding-left: 0;
+}
+
+.playlist-section .fa-plus {
+  padding: 10px;
+
+  /* font-size: 2em; */
+  background-color: #a3a3a3;
+}
+
+.playlist-section ul {
+  margin-top: 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  /* font-size: 1.2em; */
+  font-weight: 700;
+  color: #717171;
+  list-style-type: none;
+}
+
+
+/* /navbar */
+
+/* navbar bottom */
+
+#navbar {
+  position: relative;
+}
+
+.navbar-bottom {
+  position: absolute;
+  bottom: 0;
+  padding: 0 20px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.install-app-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.install-app-section span {
+  /* font-size: 1.2em; */
+  font-weight: 700;
+  color: #717171;
+}
+
+.install-app-section img {
+  height: 19px;
+}
+
+.navbar-bottom hr {
+  height: 1px;
+  background-color: #717171;
+  border: none;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-section .profile-name{
+  /* font-size: 1.3em; */
+  color: white;
+}
+
+.profile-section .profile-image{
+  height: 24px;
+  width: 24px;
+  background-color: #808080;
+  border-radius: 50%;
+
+}
+/* /navbar bottom */
