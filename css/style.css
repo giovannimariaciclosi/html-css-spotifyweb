@@ -79,8 +79,19 @@ main {
   font-size: 0.8em;
 }
 
-#selected {
-  border-bottom: 2px solid #adff2f;
+.main-navbar li {
+  position: relative;
+}
+
+.main-navbar li#selected::before {
+  content: "";
+  height: 3px;
+  width: 30px;
+  position: absolute;
+  bottom: -5px;
+  left: 30%;
+
+  background-color: #adff2f;
 }
 /* /main navbar */
 
@@ -109,8 +120,17 @@ main {
   gap: 10px;
 }
 
+.section-element .img-container {
+  position: relative;
+}
+
 .section-element .play-transparent {
   display: none;
+  font-size: 5em;
+  position: absolute;
+  left: 33%;
+  top: 33%;
+  color: white;
 }
 
 .element-image {
@@ -174,6 +194,7 @@ main {
   display: flex;
   align-items: center;
   gap: 10px;
+  border-left: 3px solid transparent;
 }
 
 .nav-menu-container.selected {
@@ -374,7 +395,24 @@ footer #footer-center {
   height: 100%;
   background-color: #c1c1c1;
   border-radius: 2px;
+
+  position: relative;
 }
+
+.player-timeline-bar-current::after {
+  display: none;
+
+  content: "";
+  height: 15px;
+  width: 15px;
+  border-radius: 7.5px;
+  position: absolute;
+  top: -5px;
+  left: 100%;
+  background-color: white;
+}
+
+
 /* /footer center */
 
 /* footer right */
@@ -406,7 +444,22 @@ footer #footer-center {
   height: 100%;
   background-color: #c1c1c1;
   border-radius: 2px;
+
+  position: relative;
 }
+
+.volume-bar-current::before {
+  display: none;
+
+  content: "";
+  height: 15px;
+  width: 15px;
+  border-radius: 7.5px;
+  position: absolute;
+  top: -5px;
+  left: 100%;
+  background-color: white;
+} 
 
 /* /footer-right */
 /* /footer */
@@ -415,6 +468,11 @@ footer #footer-center {
 
 .nav-menu-container:hover .nav-menu-text{
   color: white;
+  cursor: pointer;
+}
+
+.create-playlist:hover .fa-solid {
+  background-color: white;
   cursor: pointer;
 }
 
@@ -438,16 +496,49 @@ footer #footer-center {
   cursor: pointer;
 }
 
-.element-image:hover {
+.main-navbar ul li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.section-element .img-container:hover {
   cursor: pointer;
   filter: brightness(50%)
 }
 
-.element-image:hover .play-transparent {
-  display: inline;
-  color: white;
-  position: absolute
+.section-element .img-container:hover .play-transparent {
+  display: block;
 }
+
+.upgrade-btn:hover {
+  transform: scale(110%);
+  cursor: pointer;
+}
+
+.player-timeline:hover {
+  cursor: pointer;
+}
+
+.player-timeline:hover .player-timeline-bar-current{
+  background-color: #adff2f;
+}
+
+.player-timeline:hover .player-timeline-bar-current::after {
+  display: block;
+}
+
+.volume-bar:hover {
+  cursor: pointer;
+}
+
+.volume-bar:hover .volume-bar-current {
+  background-color: #adff2f;
+}
+
+.volume-bar:hover .volume-bar-current::before {
+  display: block;
+}
+
 
 /* /hover */
 
