@@ -39,13 +39,19 @@ main {
 /* premium section */
 .premium-upgrade {
   height: 70px;
+  position: fixed;
+  z-index: 2;
+  width: calc(100% - 250px);
 
   display: flex;
   justify-content: flex-end;
   align-items: center;
 
-
   background-color: #080b12;
+}
+
+.main-section {
+  padding-top: 70px;
 }
 
 .upgrade-btn {
@@ -604,6 +610,10 @@ footer #footer-center {
   }
 
   main {
+    width: calc(100% - 50px);
+  }
+
+  .premium-upgrade {
     width: calc(100% - 50px);
   }
 
