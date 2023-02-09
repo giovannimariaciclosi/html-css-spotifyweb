@@ -66,11 +66,12 @@ main {
 .main-navbar ul {
   margin-top: 40px;
   margin-bottom: 40px;
-  position: relative;
+  padding: 0 20px;
 
   display: flex;
   justify-content: center;
   gap: 25px;
+  flex-wrap: wrap;
 
   color: #797c80;
   list-style-type: none;
@@ -108,8 +109,13 @@ main {
   gap: 10px;
 }
 
+.section-element .play-transparent {
+  display: none;
+}
+
 .element-image {
   width: 100%;
+  position: relative;
 }
 
 .element-title {
@@ -157,6 +163,10 @@ main {
 
 .logo {
   padding: 20px 95px 20px 20px;
+}
+
+.logo-small {
+  display: none;
 }
 
 .nav-menu-container {
@@ -401,3 +411,153 @@ footer #footer-center {
 /* /footer-right */
 /* /footer */
 
+/* hover */
+
+.nav-menu-container:hover .nav-menu-text{
+  color: white;
+  cursor: pointer;
+}
+
+.playlist-section ul li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.install-app-section:hover span  {
+  color: white;
+  cursor: pointer;
+}
+
+#footer-left .fa-regular:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.player-buttons #play-button:hover {
+  transform: scale(115%);
+  cursor: pointer;
+}
+
+.element-image:hover {
+  cursor: pointer;
+  filter: brightness(50%)
+}
+
+.element-image:hover .play-transparent {
+  display: inline;
+  color: white;
+  position: absolute
+}
+
+/* /hover */
+
+
+/* medida query */
+/* tablet */
+
+@media screen and (max-width:992px) {
+  .section-container {
+    flex-wrap: wrap;
+  }
+
+  .section-element {
+    width: calc(100% / 4 - 15px);
+    font-size: 0.8em;
+  }
+}
+
+
+
+@media screen and (max-width:768px) {
+
+  .section-element {
+    width: calc(100% / 2 - 15px);
+  }
+
+  .player-buttons #play-button {
+    font-size: 1.4em;
+  }
+
+  .player-buttons {
+    font-size: 1.2em;
+    padding-top: 5px;
+    padding-bottom: 0;
+  }
+
+  #footer-left {
+    max-width: 200px;
+    padding: 24px 10px;
+    padding-right: 20px;
+  }
+
+  #footer-right {
+    max-width: 200px;
+    padding: 24px 10px;
+    padding-left: 20px;
+  }
+
+  footer #footer-center {
+  }
+
+}
+
+/* smartphone */
+@media screen and (max-width:576px) {
+
+  .section-title {
+    font-size: 1em;
+  }
+
+  #navbar {
+    width: 50px;
+  }
+
+  main {
+    width: calc(100% - 50px);
+  }
+
+  .nav-menu-container {
+    padding-left: 17px;
+    display: block;
+    padding-left: 12px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo-small {
+    display: block;
+    padding: 0 10px;
+  }
+
+  .nav-menu-container.selected {
+    border-left: none;
+    display: block;
+    padding-left: 12px;
+  }
+
+  .nav-menu-text {
+    display: none;
+  }
+
+  .nav-menu-icon {
+    max-height: 25px;
+  }
+
+  .playlist-section {
+    display: none;
+  }
+
+  .navbar-bottom {
+    display: none;
+  }
+
+  .player-buttons #play-button {
+    font-size: 1.2em;
+  }
+
+  .player-buttons {
+    font-size: 1em;
+  }
+}
