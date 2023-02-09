@@ -209,6 +209,7 @@ main {
 
 .nav-menu-icon {
   max-height: 20px;
+  filter: brightness(50%)
 }
 
 .nav-menu-text {
@@ -472,9 +473,17 @@ footer #footer-center {
 
 /* hover */
 
-.nav-menu-container:hover .nav-menu-text{
+.nav-menu-container:hover .nav-menu-text {
   color: white;
   cursor: pointer;
+}
+
+.nav-menu-container:hover .nav-menu-icon {
+  filter: brightness(100%)
+}
+
+.nav-menu-container:hover {
+  border-left: 3px solid #adff2f;
 }
 
 .create-playlist:hover .fa-solid {
@@ -497,6 +506,12 @@ footer #footer-center {
   cursor: pointer;
 }
 
+.track-title:hover {
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+}
+
 .player-buttons #play-button:hover {
   transform: scale(115%);
   cursor: pointer;
@@ -514,6 +529,7 @@ footer #footer-center {
 
 .section-element .img-container:hover .play-transparent {
   display: block;
+  filter: brightness(100%)
 }
 
 .upgrade-btn:hover {
@@ -545,13 +561,11 @@ footer #footer-center {
   display: block;
 }
 
-
 /* /hover */
 
 
 /* medida query */
 /* tablet */
-
 @media screen and (max-width:992px) {
   .section-container {
     flex-wrap: wrap;
@@ -562,8 +576,6 @@ footer #footer-center {
     font-size: 0.8em;
   }
 }
-
-
 
 @media screen and (max-width:768px) {
 
@@ -662,3 +674,4 @@ footer #footer-center {
     font-size: 1em;
   }
 }
+/* /media query */
